@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void start()
     {
-        //playerProgress = FindObjectOfType<PlayerProgress>();
+        playerProgress = FindObjectOfType<PlayerProgress>();
     }
 
     public void DealDamage(float damage)
@@ -26,7 +26,7 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             animator.SetTrigger("hit");
-         //   playerProgress.AddExperience(10);
+           playerProgress.AddExperience(10);
         }
         
 
